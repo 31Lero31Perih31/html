@@ -8,3 +8,50 @@
 header {  /* Header -------------------------------------------------------------------------------------------------------------------- */
   padding: 0.75em 2.5em;
 }
+
+
+main {  /* Main ------------------------------------------------------------------------------------------------------------------------ */
+ padding: 2em 1.5em 3em 1.5em; 
+}
+
+
+
+
+
+
+section#apres {
+  flex-direction: row;
+  gap: 1em;
+  box-shadow: none;
+} section#apres > div {
+  border-radius: 1em;
+}
+
+
+
+
+section#apres > div:nth-of-type(1) > h2 { display: none; }
+section#apres > div:nth-of-type(2) > h2 { display: block; }
+
+
+
+
+section#apres > div:nth-of-type(1) {
+  border-radius: 1em;
+  max-height: 18em;
+}
+
+
+section#apres > div:nth-of-type(2) {
+  box-shadow: inset 0em 0em 1em var(--color-darkest-black-02);
+} section#apres > div:nth-of-type(2) > h2 {
+  background-color: var(--html-color-study-02);
+}
+
+
+section#apres > div > p {
+  padding: 0.5em 1em;
+} section#apres > div > h2 {
+  text-indent: 0em;
+  padding: 0.25em 0.5em;
+}
