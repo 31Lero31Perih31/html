@@ -97,10 +97,10 @@
   border-radius: 0.25em; border: 2px solid var(--color-darkest-black-01);
   margin: 0.75em 0em;
 } .scroll::-webkit-scrollbar-track:hover {
-  background: var(--color-medium-grey-01);
+  background: var(--color-medium-black-01);
 } .scroll::-webkit-scrollbar-thumb {  /* Mover Scroll */
   border: 1px solid var(--color-darkest-black-01); border-radius: 0.25em;
-  background-color: var(--color-medium-grey-01);
+  background-color: var(--color-medium-black-01);
 } .scroll::-webkit-scrollbar-thumb:hover {
   background: var(--color-dark-grey-01);
 }
