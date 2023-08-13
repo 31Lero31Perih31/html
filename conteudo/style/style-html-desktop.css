@@ -5,17 +5,34 @@
 
 
 
+
+
+
 header {  /* Header -------------------------------------------------------------------------------------------------------------------- */
   padding: 0.75em 2.5em;
 }
 
 
 
+
+
+
+div#container-burge { display: none; }
+div#container-links { display: flex; }
+
+
+
+
+
+
 main {/* Main ------------------------------------------------------------------------------------------------------------------------ */
   padding: 1em;
 } main > * {
-  margin: 2.5em auto;
+  margin: 2em auto;
 }
+
+
+
 
 
 
@@ -24,7 +41,7 @@ section#apres {
   gap: max(1em , 2vw);
   box-shadow: none;
 } section#apres > div {
-  border-radius: 1em;
+  border-radius: 0.75em;
 }
 
 
@@ -36,7 +53,7 @@ section#apres > div:nth-of-type(2) > h2 { display: block; }
 
 
 
-section#apres > div:nth-of-type(1) {
+section#apres > div:nth-of-type(1) {  /* Div Img */
   border-radius: 1em;
   max-height: 18em;
   border: none;
@@ -45,15 +62,9 @@ section#apres > div:nth-of-type(1) {
 
 
 
-section#apres > div > p {
+section#apres > div > p {  /* Div Txt */
   padding: 0.5em 1em;
 } section#apres > div > h2 {
   text-indent: 0em;
   padding: 0.25em 0.5em;
-}
-
-
-
-div.code > code {
-  max-width: 70%;  
 }
