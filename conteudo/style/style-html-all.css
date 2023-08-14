@@ -8,7 +8,7 @@
 
 :root {
 
-  --header-content-size: 2.5em;
+  --header-content-size: 3em;
 
 
 
@@ -38,35 +38,6 @@
   --study-color-02: #4444ff88;
   --study-color-03: #4444ff44;
 
-
-
-
-  --ruido-effect-gadient:
-   linear-gradient(
-   180deg,
-   #ffffff40 00% ,
-   #ffffff00 05% ,
-   #ffffff40 10% ,
-   #ffffff00 15% ,
-   #ffffff40 20% ,
-   #ffffff00 25% ,
-   #ffffff40 30% ,
-   #ffffff00 35% ,
-   #ffffff40 40% ,
-   #ffffff00 45% ,
-   #ffffff40 50% ,
-   #ffffff00 55% ,
-   #ffffff40 60% ,
-   #ffffff00 65% ,
-   #ffffff40 70% ,
-   #ffffff00 75% ,
-   #ffffff40 80% ,
-   #ffffff00 85% ,
-   #ffffff40 90% ,
-   #ffffff00 95% ,
-   #ffffff40 100%
-    );
-  
 
 
 
@@ -212,7 +183,7 @@ div#container-title h1 {  /* Study Título */
   display: none;
 } div#container-waifu:hover ~ div#container-title {  /* Hover */
   box-shadow: inset 0em 0em 2em var(--color-medium-black-01);
-  background-image: var(--ruido-effect-gadient);
+  background-color: var(--color-darkest-black-02);
 } div#container-waifu:hover ~ div#container-title * h1 {
   color: var(--color-lighter-white-02);
 } div#container-waifu:hover ~ div#container-title * h1 > span {
@@ -222,13 +193,17 @@ div#container-title h1 {  /* Study Título */
 
 
 
-
-
-div#container-links > a {  /* Guia */
+div#container-links ,
+div#container-links * {
+  transition-duration: 0.35s;
+} div#container-links > h2  /* Guia */
+, div#container-links > a {
   font-size: 1em;
   font-weight: 400;
 }
 
+
+div#container-links > h2 { display: none; }
 
 
 
