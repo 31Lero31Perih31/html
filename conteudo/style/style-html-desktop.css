@@ -75,3 +75,19 @@ section#apres > div > p {  /* Div Txt */
   text-indent: 0em;
   padding: 0.25em 0.5em;
 }
+
+
+
+
+
+
+
+
+
+footer > * { /* Footer ------------------------------------------------------------------------------------------------------------------------------ */
+  width: 85%;
+  max-width: 75em;
+  margin: auto;
+} div#notes {
+  grid-template-columns: repeat( 3, 1fr);
+}

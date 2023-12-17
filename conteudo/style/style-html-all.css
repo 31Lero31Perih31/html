@@ -1,5 +1,6 @@
 @charset "UTF-8";
 @import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
 
 
 /* TELAS PEQUENAS */
@@ -44,15 +45,15 @@
   --fonte-animatic: 'Amatic SC', cursive;
   --font-apple: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   --font-angel: "Angel", sans-serif;
+  --font-notes: 'Indie Flower', cursive;
 
 }
 
 
-* {  /* CSS Padrão Geral */
+* {  /* Default CSS Setings */
   padding: 0em; margin: 0em;
   font-family: Arial, Helvetica, sans-serif;
   list-style-type: none;
-  text-decoration: none;
 } body, html {
   background-color: var(--color-dark-black-01);
   width: 100vw; height: 100vh;
@@ -128,13 +129,13 @@ header {  /* Header ------------------------------------------------------------
 
 
 div.icon {  /* Icons */
-  box-sizing: border-box;
   width: var(--header-content-size);
+  box-sizing: border-box;
   border-radius: 50%;
   border: 2px solid var(--color-medium-black-01);
 } div.icon * {
-  border-radius: 50%;
   width: 100%; height: 100%;
+  border-radius: 50%;
   transition-duration: 0.15s;
   display: flex;
   justify-content: center;
@@ -160,8 +161,8 @@ div#container-burge > div > div {  /* Container Icone Menu Burger */
   align-items: center;
 } div#container-burge > div > div > div {  /* Icone Menu Burger */
   width: 90%; height: 0.1em;
-  background-color: var(--study-color-01);
   border-radius: 05% / 50%;
+  background-color: var(--study-color-01);
 }
 
 
@@ -176,12 +177,12 @@ div#container-title h1 {  /* Study Título */
   transition-duration: 0.35s;
   font-size: 1.8em;
 } div#container-title h1 > span {
+  display: none;
   white-space: nowrap;
   color: var(--color-light-grey-01);
   line-height: 1em;
   font-size: 0.5em;
   font-weight: 400;
-  display: none;
 } div#container-waifu:hover ~ div#container-title {  /* Hover */
   box-shadow: inset 0em 0em 2em var(--color-medium-black-01);
   background-color: var(--color-darkest-black-02);
@@ -223,6 +224,46 @@ main { /* Main -----------------------------------------------------------------
   max-width: 70em;
   margin: 1.5em auto;
 }
+
+
+
+
+
+
+
+.container-study {  /* Formatações padrão */
+  padding: 0em;
+  overflow: hidden;
+  border-radius: 0.75em;
+  box-shadow: inset 0em 0em 2em var(--color-darkest-black-02);
+  background-color: var(--color-medium-black-02);
+} h2.study {
+  padding: 0.25em 0.5em;
+  font-family: var(--font-apple);
+  font-weight: normal;
+  background-color: var(--study-color-03);
+} div.container-content td
+, div.container-content th {
+  padding: 0.5em 0.25em;
+  text-align: center;
+}
+
+
+
+div.coment > code {
+  display: block;
+  max-width: 80%;
+  margin: auto;
+  text-align: center;
+  font-family: 'Courier New', Courier, monospace, Times, monospace;
+  color: var(--color-lighter-white-02);
+} a {
+  text-decoration: none;
+}
+
+
+
+
 
 
 
@@ -299,18 +340,19 @@ table > thead > tr > th {  /* Tabelas Header */
 
 
 table > tbody > tr > td:nth-of-type(3) {  /* Mais Informações */
-  padding: 0.25em;
   width: 1.75em;
+  padding: 0.25em;
 } section.container-study table > tbody > tr:nth-of-type(2n) {
   display: none;
 } div.m-info {
   width: 100%; height: 100%;
+  overflow: hidden;
   line-height: 0em;
   border-radius: 50%;
-  overflow: hidden;
   cursor: pointer;
 } div.m-info > img {
-  width: 100%; height: 100%;
+  width: 100%;
+  height: 100%;
 } 
 
 
@@ -323,93 +365,15 @@ table > tbody > tr > td:nth-of-type(3) {  /* Mais Informações */
 
 
 
-.container-study {  /* Formatações padrão */
-  background-color: var(--color-medium-black-02);
-  box-shadow: inset 0em 0em 2em var(--color-darkest-black-02);
-  border-radius: 0.75em;
-  padding: 0em;
-  overflow: hidden;
-} h2.study {
-  background-color: var(--study-color-03);
-  padding: 0.25em 0.5em;
-  font-family: var(--font-apple);
-  font-weight: normal;
-} div.container-content td
-, div.container-content th {
-  padding: 0.5em 0.25em;
-  text-align: center;
-}
 
-
-
-div.code > code {
-  text-align: center;
-  margin: auto;
-  max-width: 80%;
-  display: block;
-  font-family: 'Courier New', Courier, monospace, Times, monospace;
-  color: var(--color-lighter-white-02);
-}
-
-
-
-
-
-
-footer {  /* Footer -------------------------------------------------------------------------------------------------------------------- */
+footer {  /* footer -------------------------------------------------------------------------------------------------------------------- */
+  padding: 1em;
   min-height: 8em;
   background-color: var(--color-medium-black-02);
-}
-
-
-
-
-
-
-div#cont-modulos {
-  border: 0.05em solid var(--color-dark-grey-02);
-  border-radius: 0.5em;
-  max-width: 42em;
-  font-size: 1.5em;
-  margin: 2.5em auto;
-  padding: 1.5em;
-  display: grid;
-  grid-template-columns: repeat( auto-fit , minmax( 12em , 1fr ) );
-  gap: 1em;
-  background-color: var(--color-darkest-black-01);
-} div#cont-modulos > * {
-  display: flex;
-  flex-direction: column;
-} div#cont-modulos * {
-  font-weight: 100;
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-} div#cont-modulos h2 {
-  text-indent: 0.25em;
-  font-size: 1em;
-  padding: 0em 0.5em 0.5em;
-} div#cont-modulos h2 > a:hover {
-  border-bottom-color: var(--color-light-grey-02);
-} div#cont-modulos a {
-  border-bottom: 0.05em solid transparent;
-  display: block;
-  width: 100%;
-} nav.links-wrape {
-
-  border-radius: 0.25em;
-  border-left: 0.05em solid var(--color-dark-grey-02);
-  border-right: 0.05em solid var(--color-dark-grey-02);
-  overflow-y: scroll;
-  height: 8em;
-} nav.links-wrape::-webkit-scrollbar-track {
-  margin: 0em;
-} nav.links-wrape > ul > li {
-  border: 1px solid var(--color-dark-grey-02);
-  transition-duration: 0.25s;
-  background-color: var(--color-medium-black-01);
-  padding: 0.25em 0.75em;
-  margin: 0.5em 0.25em;
-} nav.links-wrape > ul > li:hover {
-  box-shadow: inset 0em 0em 0.8em var(--color-darkest-black-01);
-} span.ver-nun {
-  font-size: 0.5em;
+} footer * {
+  color: var(--color-lighter-white-02);
+} div#notes * {
+  font-family: var(--font-notes);
+} div#notes > p > span {
+  font-weight: bolder;
 }
