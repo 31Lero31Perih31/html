@@ -377,3 +377,49 @@ footer {  /* footer ------------------------------------------------------------
 } div#notes > p > span {
   font-weight: bolder;
 }
+
+
+
+
+
+
+
+
+
+header > div:nth-of-type(2) {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+} div#container-links.openBurge {
+  display: flex;
+}
+
+
+
+@media screen and (max-width: 600px) {  /* sub 600px ----------------------------------------------------------------------------------- */
+
+
+  div#container-links.openBurge { /* Bar Social Links */
+    padding: 0.2em;
+    width: 8.5em;
+    position: absolute;
+    top: calc( 100% + 1em);
+    right: 0em;
+    height: fit-content;
+    border-radius: 0.75em;
+  } div#container-links {
+    background-color: var(--color-darkest-black-02);
+    flex-direction: column;
+    gap: 0.25em;
+  } div#container-links.openBurge h2 {
+    display: none;
+  } div#container-links.openBurge * {
+    font-size: 1.25em;
+    padding: 0.25em;
+    text-align: center;
+    width: 100%;
+  }
+  
+  
+  
+  }
