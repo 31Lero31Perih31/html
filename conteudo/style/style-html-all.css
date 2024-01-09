@@ -414,6 +414,7 @@ header > div:nth-of-type(2) {
   } div#container-links.openBurge h2 {
     display: none;
   } div#container-links.openBurge * {
+    font-weight: 100;
     font-size: 1.25em;
     padding: 0.25em;
     text-align: center;
